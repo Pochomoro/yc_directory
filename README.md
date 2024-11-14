@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# NextJS 15 Blog App for Startups (yc_directory)
 
-First, run the development server:
+A project created following a tutorial by JavaScript Mastery, building a blog application using the latest Next.js 15, with added error management via Sentry and database management via Sanity. This app allows users to post, filter, and explore articles related to startups, featuring a GitHub OAuth login for user authentication and data storage in Sanity.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Project Overview
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This app is designed to manage and display articles about startups, enabling users to:
+- Post new articles
+- Filter articles by various parameters
+- Explore articles through a user-friendly interface
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Key Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Next.js 15**: Utilized Next.js’s newest features, including Partial Pre-rendering (PPR) and server components to enhance performance.
+- **Sentry**: Integrated for robust error monitoring and management, providing seamless tracking and reporting of errors in both development and production environments.
+- **Sanity**: Used as the content management system (CMS) and database, storing and structuring article and user data.
+- **GitHub OAuth Authentication**: Leveraged GitHub OAuth to securely authenticate users, with authenticated data saved in Sanity for easy management.
+- **Partial Pre-Rendering (PPR)**: Implemented to improve load times and SEO by rendering critical content on the server side.
+- **Server Components**: Used `use server` and `use client` to handle components more efficiently in a hybrid server-client model.
 
-## Learn More
+## Technologies Used
 
-To learn more about Next.js, take a look at the following resources:
+- **Framework**: [Next.js 15](https://nextjs.org/)
+- **Error Monitoring**: [Sentry](https://sentry.io/)
+- **Content Management & Database**: [Sanity](https://www.sanity.io/)
+- **Authentication**: GitHub OAuth for secure user authentication
+- **Frontend**: Tailwind CSS for responsive and modern UI
+- **Deployment**: Hosted on Vercel for streamlined CI/CD
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## How It Works
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Authentication**: Users can log in via GitHub OAuth, and their information is stored in Sanity.
+- **Error Handling**: Sentry tracks errors across both the client and server, helping monitor issues in real time.
+- **Content Management**: Articles and user data are stored in Sanity, allowing easy retrieval and management.
+- **Rendering**: Uses PPR to render critical content on the server, improving load times and SEO. `use server` and `use client` components handle rendering efficiently between server and client environments.
 
-## Deploy on Vercel
+## Learning Highlights
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Gained practical experience with the new **Next.js 15 features** like PPR and server components.
+- Learned how to integrate and configure **Sentry for error management**.
+- Set up and managed a **Sanity CMS** for structured content storage and retrieval.
+- Gained knowledge in **OAuth authentication** using GitHub, ensuring secure and seamless user login.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Acknowledgements
+
+Special thanks to [JavaScript Mastery](https://www.youtube.com/c/javascriptmastery) for the tutorial that served as the foundation for this project.
+
